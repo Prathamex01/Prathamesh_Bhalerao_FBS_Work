@@ -1,0 +1,55 @@
+//Prime numbers check using functions
+
+#include<stdio.h>
+ void isPrime(int* ,int );
+void main()
+{
+	int arr[10];
+	
+	
+	for (int i=0;i<10;i++)
+	{
+	
+	printf("Enter the element%d: ",i+1);
+	scanf("%d",&arr[i]);
+	
+}
+
+printf("The prime numbers in the array are:\n");
+
+	isPrime(arr,10);
+
+	
+	
+}
+
+ void isPrime(int* arr,int size)
+{
+for(int i=0;i<size;i++)
+{
+int num=arr[i];
+	int status=1;
+
+	for(int j=2;j<=num/2;j++)
+{ 
+	if (num%j==0)
+	{
+	status=0;
+	break;
+}
+ }	if(status==1)
+
+	printf("%d\n",num);
+}
+
+}
+	
+
+		
+		
+		
+		
+	
+	
+	
+	
