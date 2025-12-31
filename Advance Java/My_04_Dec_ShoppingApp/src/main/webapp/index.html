@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            width: 180px;
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product label {
+            display: block;
+            margin-top: 10px;
+        }
+        .submit-btn {
+            margin-top: 30px;
+            padding: 10px 25px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+ <h2>Online Shopping</h2>
+
+    <!-- Form start -->
+    <!-- Change action="CartServlet" to your servlet / next page -->
+    <form action="productservlet" method="post">
+
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://image2url.com/images/1764854627199-8eb861df-8aa3-4b03-b500-acba6e23f264.jpg" alt="Mobile">
+                <label>
+                    <input type="checkbox" name="items" value="mobile">
+                    Select Mobile
+                </label>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://image2url.com/images/1764854656931-d64da7a2-8a78-432e-ab5e-ecd2f16b2e8b.jpg" alt="Laptop">
+                <label>
+                    <input type="checkbox" name="items" value="laptop">
+                    Select Laptop
+                </label>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://image2url.com/images/1764854684711-96b2bebe-364f-4474-b29b-5ca181e587bf.jpg" alt="Headphones">
+                <label>
+                    <input type="checkbox" name="items" value="headphones">
+                    Select Headphones
+                </label>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+
+
+</body>
+</html>
